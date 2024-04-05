@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1.8rem;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="Image of equilibrium"
+            class="nft-img"
+          />
+
+          <div class="img-hover">
+            <img
+              src="./images/icon-view.svg"
+              alt="Eye image"
+              class="second-img"
+            />
+          </div>
+        </div>
+
+        <h1 class="heading small-margin-left">Equilibrium #3429</h1>
+
+        <p class="info small-margin-left">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="values small-margin-left">
+          <div class="eth">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="Etherium image"
+              class="eth-img"
+            />
+            <p class="eth-text">0.041 ETH</p>
+          </div>
+
+          <div class="time">
+            <img
+              src="./images/icon-clock.svg"
+              alt="Clock icon"
+              class="time-img"
+            />
+
+            <p class="time-text">3 days left</p>
+          </div>
+        </div>
+
+        <div class="person small-margin-left">
+          <img
+            src="./images/image-avatar.png"
+            alt="Person image"
+            class="person-img"
+          />
+
+          <p class="person-text">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/anujcodes_25">Anuj Gupta</a>.
+  </div>
+  </body>
+</html>

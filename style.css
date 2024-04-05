@@ -1,0 +1,189 @@
+:root {
+  /* Primary COlors */
+  --p-blue: hsl(215, 51%, 70%);
+  --p-cyan: hsl(178, 100%, 50%);
+
+  /* Neutral colors */
+  --blue-main-bg: hsl(217, 54%, 11%);
+  --blue-card-bg: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font weight */
+  --font-w-small: 300;
+  --font-w-medium: 400;
+  --font-w-large: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Outfit";
+  background-color: var(--blue-main-bg);
+}
+
+main {
+}
+
+.container {
+  width: 36rem;
+  height: auto;
+
+  background-color: var(--blue-card-bg);
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+.image-container {
+  margin: 2.4rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.nft-img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-hover {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: var(--p-cyan);
+  opacity: 0.5;
+
+}
+
+.second-img {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  width: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #fff;
+}
+
+.image-container:hover .img-hover {
+  display: block;
+}
+
+.image-container:hover .second-img {
+  display: block;
+}
+
+.heading {
+  color: var(--white);
+  font-weight: var(--font-w-large);
+  margin: 0 2.4rem 1.8rem 2.4rem;
+}
+
+.heading:hover,
+.heading:active {
+  cursor: pointer;
+  color: var(--p-cyan);
+}
+
+.info {
+  color: var(--p-blue);
+  font-size: 1.8rem;
+  margin: 0 2.4rem 1.8rem 2.4rem;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 2.4rem 2.4rem 2.4rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--p-blue);
+}
+
+.eth {
+  display: flex;
+  gap: 1rem;
+}
+
+.eth-img {
+  display: block;
+}
+
+.eth-text {
+  color: var(--p-cyan);
+  font-size: 1.4rem;
+  font-weight: var(--font-w-large);
+}
+
+.time {
+  display: flex;
+  gap: 1rem;
+}
+
+.time-img {
+  display: block;
+}
+
+.time-text {
+  align-self: flex-end;
+  color: var(--p-blue);
+  font-size: 1.4rem;
+  width: 7rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2.4rem 0 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.person-img {
+  display: block;
+  width: 12%;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.person-text {
+  color: var(--p-blue);
+  font-size: 1.8rem;
+}
+
+.person-text span {
+  color: var(--white);
+  font-weight: var(--font-w-medium);
+}
+
+.person-text span:hover,
+.person-text span:active {
+  color: var(--p-cyan);
+  cursor: pointer;
+}
+
+.small-margin-left {
+  margin-left: 2.4rem;
+}
